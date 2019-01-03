@@ -43,6 +43,13 @@
       </el-progress>
       <span class="el-upload-list__item-actions" v-if="listType === 'picture-card'">
         <span
+          class="el-upload-list__item-preview1"
+          v-if="handlePreview && listType === 'picture-card'"
+          
+        >
+          <i class="el-icon-zoom-in"></i>
+        </span>
+        <span
           class="el-upload-list__item-preview"
           v-if="handlePreview && listType === 'picture-card'"
           @click="handlePreview(file)"
