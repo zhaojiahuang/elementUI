@@ -278,7 +278,7 @@ export default {
           listType={this.listType}
           files={this.uploadFiles}
           on-remove={this.handleRemove}
-          handlePreview={this.onPreview}>
+          handlePreview={this.onPreview}
           handleRotate={this.onRotate}>
         </UploadList>
       );
