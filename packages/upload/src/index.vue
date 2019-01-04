@@ -71,6 +71,9 @@ export default {
     onPreview: {
       type: Function
     },
+    onRotate: {
+      type: Function
+    },
     onSuccess: {
       type: Function,
       default: noop
@@ -276,6 +279,7 @@ export default {
           files={this.uploadFiles}
           on-remove={this.handleRemove}
           handlePreview={this.onPreview}>
+          handleRotate={this.onRotate}>
         </UploadList>
       );
     }
@@ -303,7 +307,7 @@ export default {
         'on-success': this.handleSuccess,
         'on-error': this.handleError,
         'on-preview': this.onPreview,
-        'on-rotate': this.onPreview,
+        'on-rotate': this.onRotate,
         'on-remove': this.handleRemove,
         'http-request': this.httpRequest
       },
