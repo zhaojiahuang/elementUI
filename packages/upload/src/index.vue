@@ -303,6 +303,7 @@ export default {
         'on-success': this.handleSuccess,
         'on-error': this.handleError,
         'on-preview': this.onPreview,
+        'on-rotate': this.onPreview,
         'on-remove': this.handleRemove,
         'http-request': this.httpRequest
       },

@@ -43,8 +43,8 @@
       </el-progress>
       <span class="el-upload-list__item-actions" v-if="listType === 'picture-card'">
         <span
-          class="el-upload-list__item-preview1"
-          v-if="handlePreview && listType === 'picture-card'"
+          class="el-upload-list__item-rotate"
+          v-if="handleRotate && listType === 'picture-card'"
           @click="handleRotate(file)"
         >
           <i class="el-icon-refresh"></i>

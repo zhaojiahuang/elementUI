@@ -32,6 +32,10 @@ export default {
       type: Function,
       default: function() {}
     },
+    onRotate: {
+      type: Function,
+      default: function() {}
+    },
     onRemove: {
       type: Function,
       default: function() {}
