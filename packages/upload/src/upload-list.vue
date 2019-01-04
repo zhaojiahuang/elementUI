@@ -44,10 +44,10 @@
       <span class="el-upload-list__item-actions" v-if="listType === 'picture-card'">
         <span
           class="el-upload-list__item-preview1"
-          v-if="handlePreview && listType === 'picture-card'"
-          
+          v-if="handleRotate && listType === 'picture-card'"
+          @click="handleRotate(file)"
         >
-          <i class="el-icon-zoom-in"></i>
+          <i class="el-icon-refresh"></i>
         </span>
         <span
           class="el-upload-list__item-preview"
@@ -96,6 +96,7 @@
         default: false
       },
       handlePreview: Function,
+      handleRotate: Function,
       listType: String
     },
     methods: {
@@ -104,6 +105,7 @@
       },
       handleClick(file) {
         this.handlePreview && this.handlePreview(file);
+        this.handleRotate && this.handleRotate(file);
       }
     }
   };
