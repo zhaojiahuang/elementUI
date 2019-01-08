@@ -21,7 +21,7 @@
       <img
         class="el-upload-list__item-thumbnail"
         v-if="file.status !== 'uploading' && ['picture-card', 'picture'].indexOf(listType) > -1"
-        :src="file.url" alt=""
+        :src="file.url" alt="" v-bind:style="{'transform': 'rotate('+file.updateXz+'deg)'}"
       >
       <a class="el-upload-list__item-name" @click="handleClick(file)">
         <i class="el-icon-document"></i>{{file.name}}

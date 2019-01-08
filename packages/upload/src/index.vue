@@ -160,7 +160,8 @@ export default {
         size: rawFile.size,
         percentage: 0,
         uid: rawFile.uid,
-        raw: rawFile
+        raw: rawFile,
+        updateXz: 0
       };
 
       if (this.listType === 'picture-card' || this.listType === 'picture') {
